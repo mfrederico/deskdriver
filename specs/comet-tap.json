@@ -1,0 +1,12 @@
+{
+  "_comment": "Comet Tag through the generic policy: one key, tap when an orange or green rival is near me. The real comet policy is smarter (lane and direction); this is the one-screenshot version a model would write first.",
+  "me":      {"rgb": [160, 230, 240], "tol": 45, "min_area": 10},
+  "threats": [{"rgb": [255, 138, 31], "tol": 55}, {"rgb": [110, 240, 138], "tol": 55}],
+  "goods":   [],
+  "controls": "tap",
+  "tap_key": "space",
+  "tap_cooldown": 0.6,
+  "danger": 70,
+  "restart": {"rgb": [255, 90, 90], "tol": 70, "share": 0.012, "keys": ["b", "space"]},
+  "region": [0.04, 0.15, 1.0, 1.0]
+}

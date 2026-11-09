@@ -1,0 +1,21 @@
+[project]
+name = "deskdriver"
+version = "0.1.0"
+description = "Virtual mouse, keyboard and screen buffer for agents on a GNOME/Wayland desktop"
+requires-python = ">=3.12"
+dependencies = ["mcp>=2"]
+
+[project.scripts]
+desk = "deskdriver.cli:main"
+deskd = "deskdriver.daemon:main"
+desk-mcp = "deskdriver.mcp_server:main"
+desk-reflex = "deskdriver.reflex.run:main"
+desk-watch = "deskdriver.reflex.watch:main"
+desk-strategist = "deskdriver.reflex.strategist:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["deskdriver", "deskdriver.reflex"]
